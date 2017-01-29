@@ -1,3 +1,5 @@
+package model;
+
 public class Persona {
      private int id_persona;
      private String nombre;
@@ -8,4 +10,6 @@ public class Persona {
 
      public Persona() {
      }
+
+
 }
