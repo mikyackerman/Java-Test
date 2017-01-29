@@ -57,7 +57,9 @@ public class Persona {
      }
 
      public void setEdad(int edad) {
-          this.edad = edad;
+          if(edad >= 18 && edad <= 70) {
+               this.edad = edad;
+          }
      }
 
      public String getDireccion() {
@@ -70,13 +72,7 @@ public class Persona {
 
      @Override
      public String toString() {
-          return "Persona{" +
-                  "id_persona=" + id_persona +
-                  ", nombre='" + nombre + '\'' +
-                  ", apellido_paterno='" + apellido_paterno + '\'' +
-                  ", apellido_materno='" + apellido_materno + '\'' +
-                  ", edad=" + edad +
-                  ", direccion='" + direccion + '\'' +
-                  '}';
+          return "La persona ID " + id_persona + " " + nombre + " " + apellido_paterno + " " + apellido_materno +
+                  " tiene " + edad + " años y vive en " + direccion;
      }
 }
